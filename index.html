@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudos de Física Interativo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Estudos de Física Interativo</h1>
+        <nav>
+            <ul>
+                <li><a href="#teoria">Teoria</a></li>
+                <li><a href="#simulacao">Simulação</a></li>
+                <li><a href="#galeria">Galeria de Imagens</a></li>
+                <li><a href="#videos">Vídeos</a></li>
+                <li><a href="#quiz">Quiz</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Seção de Teoria -->
+        <section id="teoria">
+            <h2>Teoria de Queda Livre</h2>
+            <p>A queda livre é um movimento uniformemente acelerado onde um objeto se move sob a influência da gravidade, desconsiderando qualquer resistência do ar.</p>
+            <ul>
+                <li>Fórmula da aceleração gravitacional: <strong>g = 9,8 m/s²</strong></li>
+                <li>Equação do movimento: <strong>h = 1/2 * g * t²</strong></li>
+            </ul>
+        </section>
+
+        <!-- Seção de Simulação -->
+        <section id="simulacao">
+            <h2>Simulação de Queda Livre</h2>
+            <div>
+                <label for="altura">Altura (metros):</label>
+                <input type="number" id="altura" value="10">
+                <button id="simularBtn">Simular Queda</button>
+            </div>
+            <canvas id="canvas" width="400" height="400"></canvas>
+        </section>
+
+        <!-- Seção de Galeria -->
+        <section id="galeria">
+            <h2>Galeria de Imagens</h2>
+            <img src="https://via.placeholder.com/300" alt="Imagem 1" class="galeria-img">
+            <img src="https://via.placeholder.com/300" alt="Imagem 2" class="galeria-img">
+        </section>
+
+        <!-- Seção de Vídeos -->
+        <section id="videos">
+            <h2>Vídeos Educativos</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/lyBOLNhP7Tg" 
+                title="Explicação de Queda Livre" frameborder="0" allowfullscreen></iframe>
+        </section>
+
+        <!-- Seção de Quiz -->
+        <section id="quiz">
+            <h2>Quiz Interativo</h2>
+            <p>Qual é o valor da aceleração da gravidade na Terra?</p>
+            <button onclick="verificarResposta(9.8)">9,8 m/s²</button>
+            <button onclick="verificarResposta(5)">5 m/s²</button>
+            <p id="resultado"></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 - Estudos de Física Interativo</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
